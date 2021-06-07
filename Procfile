@@ -1,1 +1,1 @@
-worker: java -jar target/*.jar
+web: java -jar target/java-getting-started-1.0.jar -Dserver.port=$PORT
