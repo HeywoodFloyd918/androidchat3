@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Server {
 //    private final int PORT = 8189;
-    private final int PORT = 8180;
+    private final int PORT = 8080;
 //    private final int PORT = 33500;
     private List<Client> clients;
 
