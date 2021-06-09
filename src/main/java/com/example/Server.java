@@ -10,11 +10,12 @@ import java.util.List;
 
 public class Server {
 //    private final int PORT = 8189;
-    private final int PORT = 8080;
+    private final int PORT = Integer.parseInt(System.getenv("PORT"));
 //    private final int PORT = 33500;
     private List<Client> clients;
 
     public Server() {
+        System.out.println(PORT);
         try (ServerSocket server = new ServerSocket(PORT)) {
             clients = new ArrayList<>();
             while (true) {
